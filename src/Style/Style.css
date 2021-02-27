@@ -1,0 +1,43 @@
+*{
+    margin: 0;padding: 0;box-sizing: border-box;
+}
+
+.App {
+    text-align: center;
+  }
+.Wallpaper{
+    display: grid;
+    place-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 80vh;
+    padding: 5%;
+}
+.Wallpaper h1{
+    color: #000;
+    text-shadow: 0 0 10px #000;
+    font-size: 60px;
+}
+form{
+    border: 1px solid #000;
+    width: 50vw;
+    height: 60vh;
+}
+.input1, .input2{
+    width: 35vw;
+    height: 8vh;
+    margin-bottom: 1%;
+    text-align: center;
+    border: none;
+    outline: none;
+}
+.input1{
+    margin-top: 8%;
+    border-bottom: 1px solid blueviolet;
+}
+form button{
+    width: 15vw;
+    height: 8vh;
+    outline: none;
+    border: none;
+}
