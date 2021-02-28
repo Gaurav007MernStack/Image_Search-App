@@ -19,9 +19,10 @@
     font-size: 60px;
 }
 form{
-    border: 1px solid #000;
+    margin-top: 2%;
     width: 50vw;
     height: 60vh;
+    box-shadow: 1px 1px 20px #00b4d8;
 }
 .input1, .input2{
     width: 35vw;
@@ -30,6 +31,7 @@ form{
     text-align: center;
     border: none;
     outline: none;
+    text-transform: capitalize;
 }
 .input1{
     margin-top: 8%;
@@ -40,4 +42,81 @@ form button{
     height: 8vh;
     outline: none;
     border: none;
+    color: #fff;
+    background: crimson;
+    font-size: 25px;
+    border-radius: 10px;
+}
+form button:hover{
+    background: darkred;
+    color: black;
+    text-shadow: 0 0 5px #fff;
+    font-weight: 500;
+}
+.Result{
+    margin-top: 5%;
+}
+
+#res{
+    margin-bottom: 5%;
+}
+/*History Component Css*/
+
+.History{
+    display:  grid;
+    place-items: center;
+}
+.History h1{
+    color: #000;
+    text-shadow: 0 0 10px #000;
+    font-size: 60px;
+}
+.dataHead{
+    margin-top: 5%;
+    box-shadow: 0 0 5px #000;
+    padding: 5%;
+}
+.parHis{
+    width: 70vw;
+    box-shadow: 1px 1px 10px rgb(7, 66, 105);
+    border-radius: 5px;
+}
+.ParLeft{
+    display:  flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+.item{
+    flex: 90%;
+    display: flex;
+    justify-content: flex-start;
+    background: #48cae4;
+    margin: 0;
+    text-transform: capitalize;
+    font-size: 20px;
+    padding-left: 2%;
+}
+.btn{
+    flex: 10%;
+    display: flex;
+    background: #6a040f;
+    font-size: 25px;
+    color: #fff;
+    justify-content: center;
+}
+
+@media(max-width:500px){
+    .Result img{
+        width: 100vw;
+    }
+    form{
+        width: 70vw;
+        height: 60vh;
+    }
+    .input1, .input2 {
+        width: 50vw;
+    }
+    form button {
+        width: 30vw;
+    }
 }

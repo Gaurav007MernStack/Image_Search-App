@@ -32,25 +32,27 @@ export const History = ()=> {
     return(
         <div >
             <Nav />
-            <div>
+            <div className="History">
                 <h1>History</h1>
-                {/*<button onClick={fetchUser}>Chech History</button>*/}
+                <div className="dataHead">
                 {
                     history.map((item)=>{
                         return(
-                            <div>
-                                <div>
-                                    <p>{item.item}</p>
-                                    <button onClick={() =>deleteItem(item._id)}>X</button>
+                            <div className="parHis">
+                                <div className="ParLeft">
+                                    <p className="item">{item.item}</p>
+                                    <button className="btn" onClick={() =>deleteItem(item._id)}>X</button>
                                 </div>
-                                <div>
-                                    <p>{item.time}</p>
+                                <div className="ParRight">
+                                    <p className="time">{item.time}</p>
                                 </div>
                                 
                             </div>
                         )   
                     })
                 }
+                </div>
+                
             </div>
         </div>
     )

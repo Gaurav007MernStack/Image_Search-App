@@ -73,7 +73,8 @@ export const Wallpaper = ()=>{
                     </div>
                     <button type="submit">Submit</button>
                 </form>
-                <div>
+                <div className="Result">
+                    <h1 id="res">Result</h1>
                     {
                         img.map((item)=>{
                             return(
