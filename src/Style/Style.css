@@ -111,12 +111,12 @@ form button:hover{
     }
     form{
         width: 70vw;
-        height: 60vh;
+        height: 45vh
     }
     .input1, .input2 {
         width: 50vw;
     }
     form button {
-        width: 30vw;
+        width: 40vw;
     }
 }
